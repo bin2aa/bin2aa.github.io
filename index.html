@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Backend Developer</title>
+    <style>
+        /* CSS Cơ bản được tích hợp sẵn để bạn dễ copy */
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { font-size: 1.2rem; opacity: 0.9; }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        h2 { border-bottom: 2px solid var(--primary-color); padding-bottom: 0.5rem; color: var(--primary-color); }
+        
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background-color: #e2e8f0;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-card h3 { margin-top: 0; color: #0f172a; }
+        .project-tech { font-size: 0.9rem; color: #64748b; margin-bottom: 1rem; }
+        
+        a.btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        a.btn:hover { background: #1d4ed8; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #0f172a;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Xin chào, tôi là Thịnh</h1>
+        <p>Laravel Backend Developer | Đam mê xây dựng hệ thống web & API</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>Giới thiệu bản thân</h2>
+            <p>Tôi là một sinh viên năm cuối ngành Công nghệ Thông tin, định hướng phát triển trở thành một Backend Developer chuyên nghiệp. Tôi có kinh nghiệm thực tế trong việc thiết kế và xây dựng các hệ thống web E-commerce, phát triển API, và có sự quan tâm đặc biệt tới việc tích hợp AI vào các ứng dụng thực tế.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Kỹ năng Công nghệ</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">PHP / Laravel</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Python (Pandas, Numpy)</span>
+                <span class="skill-tag">Streamlit / LangChain</span>
+                <span class="skill-tag">Git / GitHub</span>
+                <span class="skill-tag">Linux / Ubuntu (WSL)</span>
+                <span class="skill-tag">Bootstrap / Alpine.js</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Dự án Tiêu biểu</h2>
+
+            <div class="project-card">
+                <h3>Hệ thống E-commerce B2B/B2C</h3>
+                <div class="project-tech">Công nghệ: Laravel, Bootstrap, Alpine.js</div>
+                <p>Tham gia phát triển hệ thống thương mại điện tử phục vụ mô hình kinh doanh B2B và B2C. Đảm nhiệm việc xây dựng logic backend, xử lý dữ liệu đơn hàng và tối ưu hóa trải nghiệm người dùng với Alpine.js ở phía frontend.</p>
+                <a href="#" class="btn">Xem Source Code</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Bus Route System API Package</h3>
+                <div class="project-tech">Công nghệ: PHP, Laravel, Scramble API Docs</div>
+                <p>Dự án cá nhân xây dựng hệ thống quản lý tuyến xe buýt được đóng gói dưới dạng package. Thiết kế các API endpoints chuẩn RESTful và sử dụng Scramble để tự động tạo tài liệu (documentation) rõ ràng cho API.</p>
+                <a href="#" class="btn">Xem Source Code</a>
+            </div>
+
+            <div class="project-card">
+                <h3>AI Web Applications</h3>
+                <div class="project-tech">Công nghệ: Python, Streamlit, LangChain</div>
+                <p>Phát triển các ứng dụng web tương tác tích hợp trí tuệ nhân tạo. Sử dụng Streamlit để dựng giao diện nhanh chóng và LangChain để kết nối, xử lý logic với các mô hình ngôn ngữ lớn (LLMs).</p>
+                <a href="#" class="btn">Xem Demo</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Blog Website (Team Project)</h3>
+                <div class="project-tech">Công nghệ: PHP, MySQL, HTML/CSS</div>
+                <p>Hợp tác cùng nhóm 3 người xây dựng hệ thống quản lý nội dung (CMS) cơ bản với đầy đủ các tính năng CRUD cho bài viết, danh mục và quản lý người dùng.</p>
+                <a href="#" class="btn">Xem Source Code</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Liên hệ</h2>
+            <p>Bạn có thể xem thêm mã nguồn các dự án tại GitHub của tôi hoặc liên hệ qua email để trao đổi cơ hội công việc.</p>
+            <p>📧 Email: email-cua-ban@gmail.com</p>
+            <p>🔗 GitHub: <a href="https://github.com/bin2aa">github.com/bin2aa</a></p>
+            <a href="#" class="btn" style="background-color: #10b981;">Tải CV của tôi (PDF)</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Bản quyền thuộc về bạn. Xây dựng với HTML/CSS & GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
